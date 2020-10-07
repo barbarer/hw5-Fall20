@@ -17,7 +17,7 @@ class FileReader:
         The constructor. Creates a new FileReader object based on the
         specified filename. For our purposes, the file should be in the same
         folder as HW5.py. To open a file called “mydiary.txt”, you would call
-        FileReader(‘mydiary.txt’)
+        FileReader('mydiary.txt')
         """
 
         # this gives you the full path to the folder that this HW5.py is in
@@ -123,8 +123,8 @@ class CsvReader(FileReader):
         movies with that genre. The list should be sorted in descending order
         by the number of movies.
 
-        For example, [(‘Comedy’, 20), (‘Drama’, 15), (‘Action’, 12),
-                      (‘Romance’, 8)]
+        For example, [('Comedy', 20), ('Drama', 15), ('Action', 12),
+                      ('Romance', 8)]
         """
 
         genre_counts = {}
@@ -163,8 +163,8 @@ class CsvReader(FileReader):
         "https://www.imdb.com/title/tt1825683" would be "tt1825683")
 
         For example, given:
-        [‘https://www.imdb.com/title/tt1825683’, ‘https://www.imdb.com/title/tt8946378’,
-         ‘https://www.imdb.com/title/tt1375666’],
+        ['https://www.imdb.com/title/tt1825683', 'https://www.imdb.com/title/tt8946378',
+         'https://www.imdb.com/title/tt1375666'],
         this method would return ['tt1825683', 'tt8946378', 'tt1375666'].
         """
 
