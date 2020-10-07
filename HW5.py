@@ -16,7 +16,7 @@ class FileReader:
         """
         The constructor. Creates a new FileReader object based on the
         specified filename. For our purposes, the file should be in the same
-        folder as HW5.py. To open a file called “mydiary.txt”, you would call
+        folder as HW5.py. To open a file called "mydiary.txt", you would call
         FileReader('mydiary.txt')
         """
 
@@ -64,9 +64,9 @@ class CsvReader(FileReader):
     def __init__(self, csvfile):
         """
         The constructor. Overwrites the FileReader constructor such that in
-        order to read a file called “mycsv.csv”, one only needs to call
-        CsvReader(‘mycsv’). (Since CsvReader is designed to work only with
-        .csv files, we don’t need to specify an extension.)
+        order to read a file called "mycsv.csv", one only needs to call
+        CsvReader('mycsv'). (Since CsvReader is designed to work only with
+        .csv files, we don't need to specify an extension.)
         """
         super().__init__(csvfile)
 
@@ -77,7 +77,7 @@ class CsvReader(FileReader):
         name found in the CSV, and each value is a list of data in that column
         with the same order as it was in the file.  Each element of the list
         corresponds to a single row in the CSV. For example, to access the
-        “Name” column in the CSV, I would access data_dict['Name'].
+        "Name" column in the CSV, I would access data_dict['Name'].
         """
 
         self.data_dict = {
